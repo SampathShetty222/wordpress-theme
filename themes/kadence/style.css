@@ -1,0 +1,124 @@
+/*!
+Theme Name: Kadence
+Theme URI: https://www.kadencewp.com/kadence-theme/
+Author: Kadence WP
+Author URI: https://www.kadencewp.com/
+Description: Kadence Theme is a lightweight yet full featured WordPress theme for creating beautiful fast loading and accessible websites, easier than ever. It features an easy to use drag and drop header and footer builder to build any type of header in minutes. It features a full library of gorgeous starter templates that are easy to modify with our intelligent global font and color controls. With extensive integration with the most popular 3rd party plugins, you can quickly build impressive ecommerce websites, course websites, business websites, and more.
+Version: 1.2.9
+License: GNU General Public License v3.0 (or later)
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: kadence
+Requires at least: 6.3
+Tested up to: 6.6
+Tags: translation-ready, two-columns, right-sidebar, left-sidebar, footer-widgets, blog, custom-logo, custom-background, custom-menu, rtl-language-support, editor-style, threaded-comments, custom-colors, featured-images, wide-blocks, full-width-template, theme-options, e-commerce
+Requires PHP: 7.4
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share
+what you've learned with others.
+*/
+html{
+    scroll-behavior: smooth;
+  }
+  .aboutus img{
+      width: auto;
+  }
+  li{
+      color: #475467;
+  }
+  .slick-track{
+      display: flex !important;
+      gap: 20px !important;
+  }
+  .autoplay button{
+      background-color:transparent;
+      border:#feca1f 1px solid;
+      color:transparent;
+      margin: auto 5px;
+      padding: 10px 20px;
+  }
+  .autoplay button:hover{
+    background-color: #feca1f;
+    color:transparent;
+  }
+  @media (max-width:767px) {
+      .desktop-header{
+          display: none !important;
+      }
+  }
+  @media (min-width:767px) {
+    .mobile-menu{
+      display: none !important;
+    }
+    
+  }
+   .clip-path{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+   }
+   .slick-prev {
+      color: #fff;
+      border-radius: 50%; 
+      width: 60px;         
+      height: 60px;      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }  
+    .slick-prev::before {
+      content: '←';      
+      font-size: 30px; 
+      color: black;
+      margin-left: 60px;
+    }
+    .slick-next {
+      color: #fff;
+      border-radius: 50%; 
+      width: 60px;         
+      height: 60px;      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slick-next::before {
+      content: '→';      
+      font-size: 30px;
+      color: black;
+      margin-left: 35px; 
+    }
+    @media (max-width:767px) {
+      .slick-next{
+          display: none !important;
+      }
+      .slick-prev{
+          display: none !important;
+      }
+      .slick-track{
+        padding-right: 60px;
+      }  
+    }
+  p{
+    line-clamp: 1;
+  }
+  .single-item {
+    position: relative;
+  }
+  .single-item .slick-prev{
+    position: absolute;
+    left: 210px;
+    bottom: -90px;
+    background-color: #feca1f;
+    color: white;
+  }
+  .single-item .slick-next{
+    position: absolute;
+    bottom: -90px;
+    left: 300px;
+    background-color: #feca1f;
+    color: white;
+  }
+  .opacity-100{
+    opacity:0.999!important;
+  }
+  .multiple-items .slick-arrow{
+    display: none !important;
+  }
