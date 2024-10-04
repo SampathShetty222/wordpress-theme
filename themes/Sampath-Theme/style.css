@@ -1,0 +1,145 @@
+/*
+Theme Name: Sampath New Theme
+Theme URI: https://wordpress.org/themes/newtheme/
+Author: Sampath Shetty
+Author URI: https://wordpress.org
+Description: New theme description is coming soon
+Requires at least: 1.1
+Tested up to: 1.0
+Requires PHP: 7.0
+Version: 1.2
+Text Domain: New Theme
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+#menu-mainmenu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.top-picks-scroll::-webkit-scrollbar {
+    display: none;
+  }
+   
+  .top-picks-scroll {
+    scrollbar-width: none;
+  }
+
+  @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+  }
+  .spin-slow{
+    animation: spin 50s linear infinite;
+  }
+  /* .icon-list-one::before{
+    width: 100%;
+  } */
+  form label{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
+  form button input{
+    margin:0;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color:#71ca00;
+    color: white;
+    cursor: pointer;
+  }
+  form input{
+    border: 0.5px solid #94a3b8;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+  }
+  form label span input{
+    width: 350px;
+    margin: 10px 0;
+  }
+  input::placeholder{
+    font-weight: 300;
+  }
+  .widget-title{
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  .sampath-footer p{
+    font-size: 15px;
+    color: #eaeaea;
+  }
+  .sampath-footer .wp-block-heading{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .sampath-footer-bottom-two div ul{
+    display: flex;
+    gap: 20px;
+  }
+  .wp-block-button__link{
+    background-color: #71ca00;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 10px;
+  }
+  #menu-mainmenu{
+    font-size: 20px;
+  }
+  @media (min-width:767px) {
+    .hamberger{
+      display: none;
+    }
+    .mobile-menu {
+      display: none;
+    }
+  }
+  @media (max-width:767px) {
+    .desktop-menu{
+      display: none;
+    }
+    .hamberger{
+      cursor: pointer;
+    } 
+    .mobile-menu{
+      position: absolute;
+      left: 198px;
+      z-index: 99;
+    }
+    .header-button{
+      width: 150px;
+    }
+  }
+  .hidden{
+    display: block;
+  }
+  .hamberger.active .first{
+    transform: rotate(45deg) translate(4px, 3px);
+  }
+  .hamberger.active .second{
+    opacity: 0;
+}
+  .hamberger.active .third{
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Custom styles for Testimonials post type */
+.testimonials .entry-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.testimonials .entry-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.testimonials .post-thumbnail {
+  max-width: 150px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,95 @@
+/*
+Theme Name: New Theme
+Theme URI: https://wordpress.org/themes/newtheme/
+Author: the WordPress team
+Author URI: https://wordpress.org
+Description: New theme description is coming soon
+Requires at least: 1.1
+Tested up to: 1.0
+Requires PHP: 7.0
+Version: 1.2
+Text Domain: New Theme
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+*{
+    margin: 0px;
+    padding: 0;
+    font-family:'montserrat';
+    box-sizing: border-box;
+}
+html{
+    margin: 0 !important;
+    padding: 0;
+}
+#menu-main-menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+#menu-main-menu li a:active{
+    border-bottom: 2px solid #C48F56;
+    padding-bottom: 10px;
+}
+.custom-logo-link{
+    width: 140px;
+    height: 60px;
+}
+.banner-subheading::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #C48F56;
+    text-align: center;
+    gap: 30px;
+}
+.show{
+   display: none;
+}
+.cross{
+    display: none;
+}
+.number{
+    -webkit-text-stroke:1px white;
+    color: transparent;
+}
+.home-service:hover{
+    background: linear-gradient(45deg, black, transparent);
+}
+
+/* sidebar-widgets */
+.wp-block-heading{
+    font-size: 24px;
+    font-weight: 700;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    width: 2px;
+    background-color: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background: linear-gradient(black,white);
+}
+
+.n2-ss-layer{
+    height: calc(98vh - 112px);
+}
+div#n2-ss-2 .n-uc-IPSrNp3tKfi5{
+    padding: 0 !important;
+}
+.n2-ss-layer{
+    padding: 0 !important;
+}
+.aboutPage-heading{
+    position: relative;
+}
+.aboutPage-heading::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #C48F56;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
